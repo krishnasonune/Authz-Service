@@ -39,6 +39,6 @@ jobs:
         image: kiyotakamine/authz-service
         tags: kiyotakamine/authz-service:build-${{ github.run_number }}
         registry: docker.io
-        dockerfile: Dockerfile.ci
+        dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
